@@ -55,16 +55,16 @@
                     </ul>
                 </li>
                 <li><a href="project.html">The Project</a></li>
-                <li class="active"><a href="docs.html">Documents</a></li>
+                <li><a href="docs.html">Documents</a></li>
                 </ul>
             </div>
     	</nav>
     </div>
     <div class="container align-center">
     <h1 class="text-center">Questionnaire Demo</h1>
-    <h2>Background</h2>
-
-		<form action="questionnaire.html">
+    <form action="questionnaire.html">
+	  	<div id="questionnaire_1" class="collapse in">
+	  	<h2 id="background">Background</h2>
 		  <div class="form-group" id="gender">
 		  <h3>What is your gender?</h3>
 			<div class="radio">
@@ -185,6 +185,418 @@
 			<input placeholder="Other" type="text" class="form-control" id="other_country" name="other" data-rule-required="true" contenteditable="false">
 			</div>
 		  </div>
+		  <div class="form-group">
+		  <button type="button" class="btn btn-default" id="next_2" data-toggle="collapse" data-target="#questionnaire_2,#questionnaire_1" href="employment">Next</button>
+		  </div>
+		</div>
+		<div id="questionnaire_2" class="collapse">
+		<h2 id="emplyment">Employment</h2>
+		<div class="form-group" id="employment-type">
+		    <h3>Are you employed?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes, Full Time</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes, Part Time</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes, Season or Temporary</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Maybe</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other_employment" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="employment-shift">
+		    <h3>If employed, what is your typical shift type?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Day Shift</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Swing Shift</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Night Shift</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other_shift" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="yearly-budget">
+		    <h3>Do you have a budget in mind for your new pet?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="yearly-budget-amount">
+		    <h3>What is your budget?</h3>
+		    <div class="btn-toolbar" role="toolbar" aria-label="ranges">
+		    <div class="btn-group" role="group" aria-label="range">
+		    <div>$250/year</div>
+				<button type="button" class="btn btn-default">1</button>
+				<button type="button" class="btn btn-default">2</button>
+				<button type="button" class="btn btn-default">3</button>
+	    		<button type="button" class="btn btn-default">4</button>
+				<button type="button" class="btn btn-default">5</button>
+		    </div>
+		    <div>$1250/Year</div>
+		    
+		  </div>
+		  </div>
+		  <div class="form-group" id="emergency-budget">
+		    <h3>Do you have a budget for in the case of a medical emergency?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="emergency-budget-amount">
+		    <h3>What is your budget?</h3>
+		    <div class="btn-toolbar" role="toolbar" aria-label="ranges">
+		    <div class="btn-group" role="group" aria-label="range">
+		    <div>$0</div>
+				<button type="button" class="btn btn-default">1</button>
+				<button type="button" class="btn btn-default">2</button>
+				<button type="button" class="btn btn-default">3</button>
+	    		<button type="button" class="btn btn-default">4</button>
+				<button type="button" class="btn btn-default">5</button>
+				<button type="button" class="btn btn-default">6</button>
+	    		<button type="button" class="btn btn-default">7</button>
+				<button type="button" class="btn btn-default">8</button>
+				<button type="button" class="btn btn-default">9</button>
+	    		<button type="button" class="btn btn-default">10</button>
+		    </div>
+		    <div>$2000</div>
+		    
+		  </div>
+			</div>
+		  <div class="form-group">
+		  <button type="button" class="btn btn-default" id="next_3" data-toggle="collapse" data-target="#questionnaire_3,#questionnaire_2" href="#lifestyle">Next</button>
+		  <button type="button" class="btn btn-default" id="back_1" data-toggle="collapse" data-target="#questionnaire_2,#questionnaire_1" href="#background">Back</button>
+		  </div>
+		</div>
+		<div id="questionnaire_3" class="collapse">
+		<h2 id="lifestyle">Lifestyle</h2>
+		<div class="form-group" id="why-adopt">
+		    <h3>Why are you wanting to adopt?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Rescue, to give an animal a forever home</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">To make my house a home</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">I wanted a pet</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-why-adopt" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="lifestyles">
+		  <h3>What lifestyle fits you best</h3>
+		  	<div class="checkbox">
+				<label><input type="checkbox" value="">Outdoorsy</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Active, gym member, socialite, etc.</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Guiet: gamer, reader, etc.</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">World Traveler</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Student</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="type-of-animal-person">
+		    <h3>Do you see yourself as a cat or a dog person?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Dog</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Cat</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Both</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="free-time">
+		    <h3>How much free time do you have in a given week?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">1-2 hours/day</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">2-4 hours/day</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">4-6 hours/day</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">6-8 hours/day</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">8-10 hours/day</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">10+ hours/day</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="animal-at-home">
+		    <h3>When you are at home, you want your new pet to?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">At my side or in my lap</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Independent -  does there own thing</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Wants love and affection but not needy</label>
+			</div>
+		  </div>
+		<div class="form-group">
+		  <button type="button" class="btn btn-default" id="next_4" data-toggle="collapse" data-target="#questionnaire_4,#questionnaire_3" href="housing">Next</button>
+		  <button type="button" class="btn btn-default" id="back_2" data-toggle="collapse" data-target="#questionnaire_3,#questionnaire_2" href="#lifestyle">Back</button>
+		  </div>
+		</div>
+		<div id="questionnaire_4" class="collapse">
+		<h2 id="housing">Housing</h2>
+		<div class="form-group" id="housing-type">
+		    <h3>What type of home do you live in?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Dorm/Resident Hall</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Apartment (2+ bedrooms)</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Apartment (Studio - 1 bedroom</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Condo</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Single Family Home</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other_housing" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="pet-deposit">
+		    <h3>Do you know if there is a pet deposit?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="pet-fee">
+		    <h3>Do you know if there is a pet fee at your home?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="yard">
+		    <h3>Do you have a yeard?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="other_cats_home">
+		    <h3>Is there a cat(s) that lives with you?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-cats" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="other_dogs_home">
+		    <h3>Is there a dog(s) that lives with you?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-dogs" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="other_animals">
+		  <h3>Are there any other pets that live with you</h3>
+		  	<div class="checkbox">
+				<label><input type="checkbox" value="">Yes, birs(s)</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Yes, reptile(s)</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Yes, small mammal(s)</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Yes, amphibian(s)r</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Yes, fish</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">No</label>
+			</div>
+		  </div>
+		<div class="form-group">
+		  <button type="button" class="btn btn-default" id="next_5" data-toggle="collapse" data-target="#questionnaire_5,#questionnaire_4" href="#history">Next</button>
+		  <button type="button" class="btn btn-default" id="back_3" data-toggle="collapse" data-target="#questionnaire_4,#questionnaire_3" href="#housing">Back</button>
+		  </div>
+		</div>	
+		<div id="questionnaire_5" class="collapse">
+		<h2 id="history">Animal History</h2>
+		<div class="form-group" id="owned_before">
+		    <h3>Have you ever owned a pet before?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="vaccinations">
+		    <h3>have you keep your current/previous pets up to date with vaccinations?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-vaccinations" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="surrendered">
+		    <h3>Have you ever surrendered a pet before?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-surrendered" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="obedience">
+		    <h3>have you done obediece training with any of your previous pets pr plan on doing it with your new one?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes, I have done it before and plan to</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes, I plan to byt have not done it before</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Maybe</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-obedience" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="kenneling">
+		    <h3>Do you plan on kenneling your new animal?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-kenneling" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="working_animal">
+		    <h3>Do you plan on this being a working animal?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-working_animal" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>
+		  <div class="form-group" id="living">
+		    <h3>Where will your new pet live at home?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Outside in the yard</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Outside kennel/chained up</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Inside a crate (when not at home)</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Inside free roam</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Inside blocked off</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">In garage</label>
+			</div>
+		  </div>
+		  <div class="form-group" id="cosmetic_surgery">
+		    <h3>Do you or have you ever had cosmetically altering surgery performed on your new/existing pet(s)?</h3>
+			<div class="radio">
+			<label><input type="radio" name="optradio">Yes</label>
+			</div>
+			<div class="radio">
+			<label><input type="radio" name="optradio">No</label>
+			</div>
+			<div class="radio-inline">
+			<label><input type="radio" name="optradio">Other:</label>
+			<input placeholder="Other" type="text" class="form-control" id="other-cosmetic_surgery" name="other" data-rule-required="true" contenteditable="false">
+			</div>
+		  </div>		  
+		<div class="form-group">
+		  <button type="button" class="btn btn-default" id="back_4" data-toggle="collapse" data-target="#questionnaire_5,#questionnaire_4" href="#housing">Back</button>
+		  <button type="submit" class="btn btn-default" id="submit" data-toggle="collapse" data-target="#questionnaire_5,#questionnaire_4" href="background">Sumbit</button>
+		  </div>
+		</div>		
 		</form>
 	  </div>
 </body>
