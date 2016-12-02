@@ -63,6 +63,26 @@
     <div class="container align-center">
     
     <h1 class="text-center" id="title">Questionnaire Demo</h1>
+    
+    <div id="Testing" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Aditional Information</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Aditional Educational Information.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
      
     <form action="questionnaire.html">
 	  	<div id="questionnaire_1" class="collapse in">
@@ -74,16 +94,16 @@
 		  <div class="form-group" id="gender">
 		  <h3>What is your gender?</h3>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Male</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Male</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Female</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Female</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Perfer not to say</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Perfer not to say</label>
 			</div>
 			<div class="radio-inline">
-			<label><input type="radio" name="optradio">Other:</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Other:</label>
 			<input placeholder="Other" type="text" class="form-control" id="otherg" name="other" data-rule-required="true" contenteditable="false">
 			</div>
 		  </div>	  
@@ -168,7 +188,7 @@
 		  <div class="form-group" id="moving">
 		  <h3>Are you planning on moving in the next 12 months?</h3>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Yes</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Yes</label>
 			</div>
 			<div class="radio">
 			<label><input type="radio" name="optradio">No</label>
@@ -181,7 +201,7 @@
 		  <div class="form-group" id="country">
 		  <h3>Are you planning on leaving the country in the next 24 months?</h3>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Yes</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Yes</label>
 			</div>
 			<div class="radio">
 			<label><input type="radio" name="optradio">No</label>
@@ -253,11 +273,11 @@
 		    <div class="btn-toolbar" role="toolbar" aria-label="ranges">
 		    <div class="btn-group" role="group" aria-label="range" data-toggle="buttons">
 		    <div>$250/year</div>
-				<label class="btn btn-default"><input type="checkbox" autocomplete="off">1</label>
-		   		<label class="btn btn-default"><input type="checkbox" autocomplete="off">2</label>
-		    	<label class="btn btn-default"><input type="checkbox" autocomplete="off">3</label>
-		    	<label class="btn btn-default"><input type="checkbox" autocomplete="off">4</label>
-		    	<label class="btn btn-default"><input type="checkbox" autocomplete="off">5</label>
+				<label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">1</label>
+		   		<label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">2</label>
+		    	<label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">3</label>
+		    	<label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">4</label>
+		    	<label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">5</label>
 		    </div>
 		    <div>$1250/Year</div>
 		    
@@ -277,16 +297,16 @@
 		    <div class="btn-toolbar" role="toolbar" aria-label="ranges">
 		    <div class="btn-group" role="group" aria-label="range" data-toggle="buttons">
 		    <div>$0</div>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">1</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">2</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">3</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">4</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">5</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">6</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">7</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">8</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">9</label>
-		    <label class="btn btn-default"><input type="checkbox" autocomplete="off">10</label>		
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">1</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">2</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">3</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">4</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">5</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">6</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">7</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">8</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">9</label>
+		    <label class="btn btn-default"><input type="checkbox" autocomplete="off" data-toggle="modal" data-target="#Testing">10</label>		
 		    </div>
 		    <div>$2000</div>
 		    
@@ -376,7 +396,7 @@
 			<label><input type="radio" name="optradio">At my side or in my lap</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Independent -  does there own thing</label>
+			<label><input type="radio" name="optradio">Independent - does there own thing</label>
 			</div>
 			<div class="radio">
 			<label><input type="radio" name="optradio">Wants love and affection but not needy</label>
@@ -421,13 +441,13 @@
 			<label><input type="radio" name="optradio">Yes</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">No</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">No</label>
 			</div>
 		  </div>
 		  <div class="form-group" id="pet-fee">
-		    <h3>Do you know if there is a pet fee at your home?</h3>
+		    <h3>Do you know if there is a pet monthly fee?</h3>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Yes</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Yes</label>
 			</div>
 			<div class="radio">
 			<label><input type="radio" name="optradio">No</label>
@@ -439,7 +459,7 @@
 			<label><input type="radio" name="optradio">Yes</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">No</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">No</label>
 			</div>
 		  </div>
 		  <div class="form-group" id="other_cats_home">
@@ -511,15 +531,15 @@
 			</div>
 		  </div>
 		  <div class="form-group" id="vaccinations">
-		    <h3>have you keep your current/previous pets up to date with vaccinations?</h3>
+		    <h3>Have you keep your current/previous pets up to date with vaccinations?</h3>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Yes</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Yes</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">No</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">No</label>
 			</div>
 			<div class="radio-inline">
-			<label><input type="radio" name="optradio">Other:</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Other:</label>
 			<input placeholder="Other" type="text" class="form-control" id="other-vaccinations" name="other" data-rule-required="true" contenteditable="false">
 			</div>
 		  </div>
@@ -537,28 +557,28 @@
 			</div>
 		  </div>
 		  <div class="form-group" id="obedience">
-		    <h3>have you done obediece training with any of your previous pets pr plan on doing it with your new one?</h3>
+		    <h3>Have you done obediece training with any of your previous pets pr plan on doing it with your new one?</h3>
 			<div class="radio">
 			<label><input type="radio" name="optradio">Yes, I have done it before and plan to</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Yes, I plan to byt have not done it before</label>
+			<label><input type="radio" name="optradio" >Yes, I plan to but have not done it before</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">No</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">No</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Maybe</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Maybe</label>
 			</div>
 			<div class="radio-inline">
-			<label><input type="radio" name="optradio">Other:</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Other:</label>
 			<input placeholder="Other" type="text" class="form-control" id="other-obedience" name="other" data-rule-required="true" contenteditable="false">
 			</div>
 		  </div>
 		  <div class="form-group" id="kenneling">
 		    <h3>Do you plan on kenneling your new animal?</h3>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Yes</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Yes</label>
 			</div>
 			<div class="radio">
 			<label><input type="radio" name="optradio">No</label>
@@ -569,9 +589,9 @@
 			</div>
 		  </div>
 		  <div class="form-group" id="working_animal">
-		    <h3>Do you plan on this being a working animal?</h3>
+		    <h3>Do you plan on this being a guard animal?</h3>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Yes</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Yes</label>
 			</div>
 			<div class="radio">
 			<label><input type="radio" name="optradio">No</label>
@@ -584,10 +604,10 @@
 		  <div class="form-group" id="living">
 		    <h3>Where will your new pet live at home?</h3>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Outside in the yard</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Outside in the yard</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Outside kennel/chained up</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Outside kennel/chained up</label>
 			</div>
 			<div class="radio">
 			<label><input type="radio" name="optradio">Inside a crate (when not at home)</label>
@@ -599,19 +619,20 @@
 			<label><input type="radio" name="optradio">Inside blocked off</label>
 			</div>
 			<div class="radio">
-			<label><input type="radio" name="optradio">In garage</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">In garage</label>
 			</div>
 		  </div>
 		  <div class="form-group" id="cosmetic_surgery">
 		    <h3>Do you or have you ever had cosmetically altering surgery performed on your new/existing pet(s)?</h3>
+		    <span class="help-block">Docked tail, crop ears, dew claws, declawing</span>
 			<div class="radio">
-			<label><input type="radio" name="optradio">Yes</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Yes</label>
 			</div>
 			<div class="radio">
 			<label><input type="radio" name="optradio">No</label>
 			</div>
 			<div class="radio-inline">
-			<label><input type="radio" name="optradio">Other:</label>
+			<label><input type="radio" name="optradio" data-toggle="modal" data-target="#Testing">Other:</label>
 			<input placeholder="Other" type="text" class="form-control" id="other-cosmetic_surgery" name="other" data-rule-required="true" contenteditable="false">
 			</div>
 		  </div>		  
