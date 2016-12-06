@@ -21,7 +21,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Questionnaire</title>
+    <title>Questionnaire Demo 2</title>
     <!-- Bootstrap -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 
@@ -45,21 +45,99 @@
       <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Meet Us
-                    <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                        <li><a href="team_anubis.html">Team Anubis</a></li>
-                        <li><a href="sponsor.html">The Sponsor</a></li>
-                    </ul>
-                </li>
-                <li><a href="project.html">The Project</a></li>
-                <li><a href="docs.html">Documents</a></li>
+                <li><a href="pet_ready.html">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Educational Information</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<!--<button class="btn btn-default navbar-btn" id="myBtn" data-toggle="modal" data-target="#Login">login</button>
+					<button class="btn btn-success navbar-btn" data-toggle="modal" data-target="#Register">Register</button>-->
                 </ul>
             </div>
     	</nav>
     </div>
+    <div class="container text-center">
+	<!-- Modal -->
+		<div class="modal fade" id="Login" role="dialog">
+			<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header" style="padding:35px 50px;">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+				</div>
+				<div class="modal-body" style="padding:40px 50px;">
+					<form role="form" action="questionnaire.html">
+						<div class="form-group">
+							<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+							<input type="email" class="form-control" id="usrname" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+							<input type="password" class="form-control" id="psw" placeholder="Enter password">
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="" checked>Remember me</label>
+						</div>
+						<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+					<p>Not a member? <a href="#">Sign Up</a></p>
+					<p>Forgot <a href="#">Password?</a></p>
+				</div>
+			</div>
+
+			</div>
+		</div>
+		
+	</div>
+	<div class="modal fade text-left" id="Register" role="dialog">
+			<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header" style="padding:35px 50px;">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4><span class="glyphicon glyphicon-lock"></span> Register</h4>
+				</div>
+				<div class="modal-body" style="padding:40px 50px;">
+					<form role="form" action="profile.html">
+						<div class="form-group">
+							<label for="fname">First name</label>
+							<input type="text" class="form-control" id="fname" placeholder="Enter your first name">
+						</div>
+						<div class="form-group">
+							<label for="fname">Last name</label>
+							<input type="text" class="form-control" id="lname" placeholder="Enter your last name">
+						</div>
+						<div class="form-group">
+							<label for="zip">Zip Code</label>
+							<input type="number" class="form-control" id="zip" placeholder="Enter your Zip Code">
+						</div>
+						<div class="form-group">
+							<label for="usrname_new">Email Address</label>
+							<input type="email" class="form-control" id="usrname_new" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="psw_new">Password</label>
+							<input type="password" class="form-control" id="psw_new" placeholder="Enter password">
+						</div>
+						<div class="form-group">
+							<label for="psw_new_check">Re-enter Password</label>
+							<input type="password" class="form-control" id="psw_new_check" placeholder="Re-enter password">
+						</div>
+						<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span> Register</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+				</div>
+			</div>
+
+			</div>
+		</div>
     <div class="container align-center">
     
     <h1 class="text-center" id="title">Questionnaire Demo</h1>
@@ -84,7 +162,7 @@
 	  </div>
 	</div>
      
-    <form action="questionnaire.html">
+    <form action="questionnaire_demo2.html">
 	  	<div id="questionnaire_1" class="collapse in">
 	  	<div class="progress progress-striped active">
         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
@@ -653,8 +731,8 @@
 		</div>	
 		<div id="questionnaire_submit" class="collapse text-center">
 			<h3 class="text-center">Thank You, you questionnaire is being evaulated for potential matches.</h3>
-			<a type="button" class="btn btn-default" id="profile" href="questionnaire.html">Profile</a>
-			<a type="button" class="btn btn-default" id="logout" href="questionnaire.html">Logout</a>
+			<a type="button" class="btn btn-default" id="profile" href="profile.html">Profile</a>
+			<a type="button" class="btn btn-default" id="logout" href="pet_ready.html">Logout</a>
 		</div>
 		</form>
 	  </div>
