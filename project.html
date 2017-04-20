@@ -54,27 +54,42 @@
                         <li><a href="sponsor.html">The Sponsor</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="project.html">The Project</a></li>
+				<li class="dropdown">
+                	<a class="dropdown-toggle" data-toggle="dropdown" href="#">The Project
+                    <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="project.html">Requirements</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                    </ul>
+                </li>
                 <li><a href="docs.html">Documents</a></li>
                 </ul>
             </div>
     	</nav>
     </div>
     
-    <div class="container text-center">
-      <h3 class="text-center">Current Schedule*</h3>
-      <div class="row">
-            <div class="col-sm-12">
-            <img src="Images/schedule.png" style="margin: auto;" class="img-responsive" width="100%"  alt="Temp" id="gannt_schedule">
-            <p>* Last updated 11/29/19, this schedule is subject to change.</p>
-			</div>
+    <div class="container">
+        <div class="row">
+			<h3 class="text-center">Requirements</h3>
+			<p>The main component of the system is to check the pet readiness level of the normal users through a questionnaire. The system is also designed to allow users to contact the shelters and express interest.</p>
+            <ul>
+				<li>The system will assess if the user is fit for adoption from the questionnaire.</li>
+				<li>The system will match the user to an animal personality profile.</li>
+				<li>The system will provide the users a method to send their questionnaire/assessment to the partnered shelter(s).</li>
+				<li>The system will be a responsive website application.</li>
+				<li>The system will be maintainable for a non-technical sponsor representative.</li>
+			</ul>
 		</div>
 		<div class="row">
-			<h3  class="text-center">See our Demos Below</h3>
-			<p><a href="questionnaire.html" target="_blank" class="btn btn-default" role="button">Bootstrap/HTML5 Questionnaire Demo</a></p>
-			<p><a href="TestProject/pet_ready.html" target="_blank" class="btn btn-default" role="button">Bootstrap/HTML5 Profile and Login Demo</a></p>
-			<p><a href="Images/ERD Demo.png" target="_blank" class="btn btn-default" role="button">Database ERD Demo</a></p>
-			<p><a href="https://docs.google.com/forms/d/e/1FAIpQLScdfaM4brqa7xXvfMuiRTrMio1JgtmoeanzP0TDFj2Bp6XNGQ/viewform" target="_blank" class="btn btn-default" role="button">Google Form Questionnaire</a></p>
+			<h3 class="text-center">Technologies</h3>
+			<h4>Microsoft Azure</h4>
+			<p>We are using Microsoft Azure because the NAU ITS is providing us with one year of web hosting.</p><br>
+			<h4>Microsoft ASP.NET 4.5.2</h4>
+			<p>Originally we were planning on using Django but changed to ASP.NET because of the hosting  provided being a windows based system. ASP.NET is a web 2.0 framework.</p><br>
+			<h4>MS SQL Database</h4>
+			<p>We originally planned on using MongoDB for a backend, but then decided to go with Microsoft SQL due to the need for a relational database.</p><br>
+			<h4>DNN Content Management System</h4>
+			<p>To be able to maintain and manage the system we are using the DNN content management system with a ASP.net front end.</p><br>
 		</div>
 	  </div>
     
